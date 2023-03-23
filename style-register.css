@@ -1,0 +1,70 @@
+/* loader animacija */
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader>img {
+    width: 90px;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+.register {
+    border: 1px white;
+    position: initial;
+    opacity: 0.9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    flex-shrink: 0;
+    padding: 20px;
+    background-color: white;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+
+.link {
+    color: #555555;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.container {
+    position: relative;
+    width: 25%;
+}
+
+.register-back {
+    background-image: url('images/image7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
+}
