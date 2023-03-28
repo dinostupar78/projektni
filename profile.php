@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+
 if (isset($_GET['logout'])) {
   header("location: index.php");
 }
@@ -29,8 +30,7 @@ if (isset($_GET['logout'])) {
   <section class="home-header">
   <nav class="navbar navbar-change sticky-top navbar-expand-md navbar-light">
       <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand" href="#">
-          <img src="image/logo.png" width="40" height="40" class="d-inline-block align-top" alt=""> Bloger</a>
+      <a class="navbar-brand" href="index.php">Bloger</a>
       </nav>
 
       <div class="mx-auto order-0">
@@ -110,7 +110,7 @@ if (isset($_GET['logout'])) {
   </section>
 
   <h4 class="display-3" style = "text-align:center;font-weight:400;">
-    <?php echo $_SESSION['username']; ?> posts
+    <?php echo $_SESSION['username']; ?> post's
   </h4>
   <?php
   $userid = $_SESSION['user_id'];

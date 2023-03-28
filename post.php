@@ -31,7 +31,7 @@ $result = mysqli_query($db, "SELECT * FROM blog Left JOIN useraccount ON useracc
     .home-header {
       position: relative;
       min-height: 500px;
-      background: linear-gradient(rgba(255, 255, 255, 0.932), rgba(255, 255, 255, 0.8)), url('image/Long-road-wallpaper.jpg');
+      background: linear-gradient(rgba(255, 255, 255, 0.932), rgba(255, 255, 255, 0.8)), url('images/Long-road-wallpaper.jpg');
       background-attachment: fixed;
       background-repeat: no-repeat;
       text-align: center;
@@ -59,7 +59,7 @@ $result = mysqli_query($db, "SELECT * FROM blog Left JOIN useraccount ON useracc
    
 
     .img-fluid {
-      border: 10px solid #dedede;
+      border: 1px solid black;
       margin-top: -200px;
       max-width: 100%;
 
@@ -155,39 +155,42 @@ $result = mysqli_query($db, "SELECT * FROM blog Left JOIN useraccount ON useracc
       <div class="animate-header">
         <div class="row">
           <div class="col-3 col-md-4">
-            <img src="<?php echo $row["avatar"]; ?>" class="image img-fluid  d-none d-md-block about-img"
-              style="border-radius: 50%;">
+            <img src="<?php echo $row["avatar"]; ?>" class="image img-fluid  d-none d-md-block about-img">
           </div>
           <div class="styl">
-            <p>
-              <?php echo $row["fname"]; ?>
+          <p>
+              <p style = "text-align:center;"><b><?php echo $row["username"]; ?>'s post</b></p>
             </p>
-            <p style="padding-left:30px;">
-              <?php echo $row["lname"]; ?>
+            <p>
+              <h2>Name: <?php echo $row["fname"]; ?></h2>
+            </p>
+            <p >
+              <h2>Surname: <?php echo $row["lname"]; ?></h2>
+            </p>
+            <p >
+              <h2>Known as: <?php echo $row["username"]; ?></h2>
             </p>
           </div>
         </div>
     </section>
 
     <section id="profile">
+      <br>
+      <br>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="card" style="border-radius: 0rem;border:0;">
-              <div class="card-header text-right" style="border-bottom: 0;">
-                <h3>
+              <div class="card-header text-center">
+                <h1>
                   <?php echo $row['title']; ?>
-                </h3>
-                <p class="card-text"><small class="text-muted">Updated:
+                </h1>
+                <h2 class="card-text"><b><small class="text-muted">Updated:
                     <?php echo $row["posted"]; ?>
-                  </small></p>
-              </div>
-              <div class="card-body">
-                <p>
+                  </small></b></h2>
+                  <p>
                   <?php echo $row['text']; ?>
-                </p>
-                <div class="container">
-                </div>
+    </p>
               </div>
             </div>
     </section>
@@ -195,6 +198,65 @@ $result = mysqli_query($db, "SELECT * FROM blog Left JOIN useraccount ON useracc
     $i++;
     }
     ?>
+    <br>
+    <br>
+     <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6 id="about">About</h6>
+          <p class="text-justify"><i>BLOG WANTS TO BE SIMPLE </i>-
+            Blogger is a free platform for writing your own<br> stories.
+            The blogger provides the most effective publication of stories.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/CSS">CSS</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/PHP">PHP</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/MySQL">MySQL</a></li>
+
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="login.php">User</a></li>
+            <li><a href="blogs.php">Blogs</a></li>
+            <li><a href="blogers.php">Blogers</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+            Bloger.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-s}-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"><img src="images\facebook_1.png"
+                    style="width:25px;padding-bottom: 5px;"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/?lang=en"><i class="fa fa-twitter"><img src="images\twitter.png"
+                    style="width:25px;padding-bottom: 5px;"></i></a></li>
+            <li><a class="dribbble" href="https://www.youtube.com/"><i class="fa fa-dribbble"><img src="images\youtube.png"
+                    style="width:25px;padding-bottom: 5px;"></i></a></li>
+            <li><a class="linkedin" href="https://www.skype.com/en/"><i class="fa fa-linkedin"><img src="images\skype.png"
+                    style="width:25px;padding-bottom: 5px;"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
  
  
 
