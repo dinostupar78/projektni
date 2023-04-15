@@ -6,6 +6,8 @@ if (isset($_GET['logout'])) {
   header("location: index.php");
 }
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -83,7 +85,7 @@ if (isset($_GET['logout'])) {
         <div class="col-md-6">
           <div class="container2">
             <img src="<?php echo $_SESSION['avatar']; ?>" class="image d-none d-md-block about-img"
-              stlye="border-radius: 50%;background-size: cover;">
+              style="border-radius: 50%;background-size: cover;">
             <div class="middle">
               <a href="edit.php" type="button" class="btn btn-outline-secondary"><img class="trans"
                   src="images\pen_1.png"> Edit profile</a>
@@ -96,7 +98,8 @@ if (isset($_GET['logout'])) {
         <div class="col-md-6">
 
           <h4 class="display-3" style = "margin-top:150px">
-            <?php echo $_SESSION["fname"]; ?>
+            <?php
+             echo $_SESSION["fname"]; ?>
             <?php echo $_SESSION['lname']; ?>
           </h4>
           <h2>Bio:</h2>

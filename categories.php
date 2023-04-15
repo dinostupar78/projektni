@@ -10,7 +10,7 @@
   <script src="https:?/stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <script src="script-index.js"></script>
-  <link rel="stylesheet" href="style-index.css">
+  <link rel="stylesheet" href="style-categories.css">
   <title>Bloger</title>
 
 <body onscroll="animateIfInView()">
@@ -49,76 +49,25 @@
             <a class="nav-link active" style="font-size: 22px;" href="blogers.php"><i class="bi bi-people-fill">
                 Blogers</i></a>
           </li>
-      
-
-
-
         </ul>
-
-
       </div>
     </nav>
-    <div class="wow" style="transition-delay: 0ms;">
-      <div class="animate-header">
-        <h1>Bloger</h1>
-        <p>Welcome</p>
-        <button type="button" class="btn btn-outline-dark"><a href="login.php">Blog Now</a></button>
-      </div>
-    </div>
+
   </section>
 
-  <section style="height:300px;margin-top:200px;">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 ">
-          <img src="images\image4.jpg" alt="" class="img-fluid" style="padding-top:70px;">
-        </div>
-        <div class="col-md-6">
-          <h3 style="margin-left:50px;">Become a successful blogger</h3>
-          <p style="margin-left:50px;">Everything you need in one place</p>
-          <a href="login.php" class="btn btn-outline-dark" style="margin-left:50px;">Create your free Bloger blog
-            today</a>
+  <div class="wra">
+      <div class="cont">
+        <div class="child bg-one">
+          <span>London</span>
         </div>
       </div>
+      
     </div>
+
   </section>
 
-  <section id="home-icons" class="py-5">
-    <div class="row mb-4">
 
-      <div class="col-md-4">
-        <div class="card text-dark text-center">
-          <div class="card-body">
-            <img src="images\ipad.png" alt="">
-            <h5 class="card-title">Easy to use</h5>
-            <p class="card-text">Bloger is an easy site to write your stories</p>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-4">
-        <div class="card text-dark text-center">
-          <div class="card-body">
-            <img src="images\iphone.png" alt="">
-            <h5 class="card-title">For each device</h5>
-            <p class="card-text">You can write your stories anytime, anywhere</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card  text-dark text-center">
-          <div class="card-body">
-            <img src="images\imac.png" alt="">
-            <h5 class="card-title">And it's free!</h5>
-            <p class="card-text">Sign up and become a part of the blogging community</p>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <footer class="site-footer">
     <div class="container">
