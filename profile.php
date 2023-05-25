@@ -102,10 +102,8 @@ if (isset($_GET['logout'])) {
              echo $_SESSION["fname"]; ?>
             <?php echo $_SESSION['lname']; ?>
           </h4>
-          <h2>Bio:</h2>
-          <p>
-            <?php echo $_SESSION['bio']; ?>
-          </p>
+          <h2>Bio:  <?php echo $_SESSION['bio']; ?></h2>
+      
         </div>
       </div>
     </div>
